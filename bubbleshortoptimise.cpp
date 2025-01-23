@@ -6,7 +6,7 @@ void bubble(int a[],int s){
     bool flag;
     for(int  i = 0 ;i<s;i++){
         flag = true;
-        for(int j = 0; j<s-1;j++){
+        for(int j = 0; j<s-i-1;j++){
             if(a[j]>a[j+1]){
                 temp  = a[j+1];
                 a[j+1]=a[j];
@@ -20,6 +20,7 @@ void bubble(int a[],int s){
         }
  
     }
+    cout << "count = " << count << "\n";
 
     for(int i = 0;i<s;i++){
         cout << a[i] << "\t";
