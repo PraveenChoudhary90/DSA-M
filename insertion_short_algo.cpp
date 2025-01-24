@@ -13,7 +13,7 @@ void insrt(int arr[],int s){
 
         }
     }
-    cout << "after appling insertin short" << "\n";
+    cout << "after applying insertin short" << "\n";
     for(int  i = 0;i<s;i++){
         cout << arr[i] << "\t";
     }
