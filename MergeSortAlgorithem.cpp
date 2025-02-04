@@ -9,13 +9,14 @@ void combine(int arr[], int low , int mid, int high){
         if(arr[i]<arr[j]){
             bk[k]=arr[i];
             i++;
-            k++;
+            // k++;
         }
         else{
-            bk[k]=arr[i];
+            bk[k]=arr[j];
             j++;
-            k++;
+            // k++;
         }
+        k++;
     }
     while(i<=mid){
         bk[k]=arr[i];
@@ -28,7 +29,7 @@ void combine(int arr[], int low , int mid, int high){
         j++;
         k++;
     }
-    for(int i =low;i<k;i++)
+    for(int i =low;i<=high;i++)
     {
         arr[i]=bk[i];
     }
