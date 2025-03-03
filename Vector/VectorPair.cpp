@@ -12,8 +12,8 @@ int main(){
         cin >> roll;
         cout << "Enter the Name" << "\n";
         cin >> name;
-        // v.push_back(make_pair(roll, name));
-        v.push_back({roll, name});
+        v.push_back(make_pair(roll, name));
+        // v.push_back({roll, name});
     }
     cout << "Results are" << "\n";
     for(int i = 0;i<v.size();i++){
